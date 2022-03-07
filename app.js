@@ -138,7 +138,7 @@ function moveMoleNormal() {
  }
 //moving the mole hard
  function moveMoleHard() {
-    timeId = setInterval(randomSqareFunc, 200)
+    timeId = setInterval(randomSqareFunc, 450)
  }
 
  // refreshing or reset the game
