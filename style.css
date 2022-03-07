@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+body{
+    background-color: ghostwhite;
+    font-family: 'Hubballi', cursive;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header h1{
+    text-align: center;
+    font-size: bolder;
+    margin: 10px;
+}
+header img{
+    width: 80px;
+}
+
+header button{
+    justify-self:flex-end;
+}
+
+.grid {
+    width: 400px;
+    height: 400px;
+    border: 1px solid whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: auto;
+    background-color: #f5963d;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.square{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    /*background-color: #D9931E;*/
+}
+.mole{
+    background-image: url(https://media.istockphoto.com/vectors/cute-cartoon-groundhod-vector-id645546840?k=6&m=645546840&s=612x612&w=0&h=9GfXJ-re4O0xWl1NoTBN5rVl5VM0gWlAOLsFYrMD0Fg=);
+    background-repeat: no-repeat;
+    background-size:cover;
+    cursor:grab;
+}
+
+
+.game-info{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    margin: 10px;
+    background-color: #f5963d;
+    color: ghostwhite;
+    padding: 10px;
+    width: auto;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.displayScore{
+    margin: 5px;
+}
+.displayTime{
+    margin: 5px;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+button{
+    width: 100px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: gainsboro;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: large;
+    font-family: 'Hubballi', cursive;
+}
+
+button:hover{
+    background-color: ghostwhite;
+    color: #333;
+    transition: all 0.4s ease-in-out;
+}
+
+input[type="color"] {
+    width: 3rem;
+    height: 3rem;
+    padding: .5rem;
+   /* background-color: transparent;*/
+    border: 0;
+   /* border-radius: 100%;*/
+}
+input[type="color" ] {
+    -webkit-appearance: square-button;
+    width: 44px;
+    height: 23px;
+    cursor: pointer;
+     border: none;
+    padding: 1px 2px;
+}
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background: #640303;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    transition: all 0.3s linear;
+    transform: translate(-100%); 
+  }
+  .show-sidebar {
+    transform: translate(0);
+  }
+  .sidebar-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 1.5rem;
+  }
+
+  .sidebar-things{
+      text-align: center;
+      color: ghostwhite;
+      border: 1px solid ghostwhite;
+      margin: 10px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+  }
+  .change-color{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    background-color: ghostwhite;
+    color: #333;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 5px;
+    height: 10%;
+}
+.change-color label{
+    font-size: larger;
+    font-weight: 600;
+}
+
+.sidebar-things select{
+    width: 90%;
+    height: 10%;
+    align-self: center;
+    font-size: large;
+    background-color: ghostwhite;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+select option{
+    width: inherit;
+}
+.sidebar-footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0;
+}
+.sidebar-footer a{
+    cursor: pointer;
+    color: ghostwhite;
+}
+.sidebar-footer a:hover{
+    color: #f5963d;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/*.body-footer{
+   color: ghostwhite;
+   border: 1px solid red;
+   background-color: #640303;
+   border-radius: 6px;
+   transition: all 0.3s linear;
+   transform: translateY(10%); 
+   width: 100%;
+   margin-bottom: 0;
+}
+.show-instructions{
+    transform: translateY(80%);
+}
+.instructions-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+.instructions-header h3{
+    margin: 10px 20px;
+}
+.open-footer{
+    background-color: #333;
+    color: ghostwhite;
+    width: 8%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    float: right;
+} */
+
+
+@media (max-width: 760px) {
+    .grid {
+        width: 300px;
+        height: 300px;
+       /* border: 1px solid whitesmoke;*/
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        margin: 15% auto;
+        background-color: #f5963d;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+        border-radius: 5px;
+    }
+
+    .game-info{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        align-items: center;
+        margin: 10px;
+        background-color: #f5963d;
+        color: ghostwhite;
+        padding: 10px;
+        width: auto;
+        text-align: center;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+        border-radius: 5px;
+    }
+    .btns{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+        margin: 5px;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: ghostwhite;
+    }
+    button{
+        width: auto;
+        background-color: #333;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        color: gainsboro;
+        padding: 7px;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: small;
+        font-family: 'Hubballi', cursive;
+        margin: 5px;
+    }
+    button:hover{
+        background-color: #f5963d;
+        color: ghostwhite;
+        transition: all 0.4s ease-in-out;
+    }
+    .mole{
+        background-image: url(https://media.istockphoto.com/vectors/cute-cartoon-groundhod-vector-id645546840?k=6&m=645546840&s=612x612&w=0&h=9GfXJ-re4O0xWl1NoTBN5rVl5VM0gWlAOLsFYrMD0Fg=);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        cursor:grab;
+    }
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100%;
+        background: #640303;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        row-gap: 1rem;
+        transition: all 0.3s linear;
+        transform: translate(-100%); 
+      }
+      .show-sidebar {
+        transform: translate(0);
+      }
+      aside button{
+          background-color: transparent;
+      }
+      aside button:hover{
+          background-color: ghostwhite;
+          color: #333;
+      }
+      select option{
+        width: inherit;
+    }
+}
+
+@media(max-width: 400px){
+    .change-color{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        text-transform: uppercase;
+        background-color: ghostwhite;
+        color: #333;
+        width: 80%;
+        margin: 10px auto;
+        border-radius: 5px;
+        height: 10%;
+        padding: 5px;
+    }
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100%;
+        background: #640303;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        row-gap: 1rem;
+        transition: all 0.3s linear;
+        transform: translate(-100%); 
+      }
+      .show-sidebar {
+        transform: translate(0);
+      }
+      select option{
+        width: inherit;
+    }
+}
