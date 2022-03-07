@@ -74,7 +74,7 @@ function startGame() {
          console.log('Medium Level')
     } else if (level.value === '3') {
         moveMoleHard()
-        currentTime = 60;
+        currentTime = 30;
         console.log(currentTime)
         timeLeftText = setInterval(countdown, 1000)
         console.log('Hard Level')
