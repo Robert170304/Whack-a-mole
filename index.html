@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="https://media.istockphoto.com/vectors/cute-cartoon-groundhod-vector-id645546840?k=6&m=645546840&s=612x612&w=0&h=9GfXJ-re4O0xWl1NoTBN5rVl5VM0gWlAOLsFYrMD0Fg=" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/e8ef6ce0d5.js" crossorigin="anonymous"></script>
     <title>WHACK-A-MOLE</title>
 </head>
 <body>
    <main>
        <header>
-            <h1>WHACK-A-MOLE</h1>
-            <img src="https://media.istockphoto.com/vectors/cute-cartoon-groundhod-vector-id645546840?k=6&m=645546840&s=612x612&w=0&h=9GfXJ-re4O0xWl1NoTBN5rVl5VM0gWlAOLsFYrMD0Fg=" alt="a-mole">
+           <div>
+              <h1>WHACK-A-MOLE</h1>
+            <img src="https://media.istockphoto.com/vectors/cute-cartoon-groundhod-vector-id645546840?k=6&m=645546840&s=612x612&w=0&h=9GfXJ-re4O0xWl1NoTBN5rVl5VM0gWlAOLsFYrMD0Fg=" alt="a-mole"> 
+           </div>
+            <button class="sidebar-toggle">
+                <i class="fas fa-bars"></i>
+              </button>
        </header>
-  <div class="game-info">
+        <div class="game-info">
         <div class="displayScore">
             <h2>Your Score</h2>
             <h2 id="score">0</h2>
@@ -40,6 +46,44 @@
        <div class="square" id="8"></div>
        <div class="square" id="9"></div>
    </div> 
+   <aside class="sidebar">
+    <div class="sidebar-header">
+      <button class="close-btn">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="sidebar-things">
+        <div class="change-color">
+            <label for="customize">customize</label>
+            <input  type="color" name="customize" id="customize">
+        </div>
+        <select name="level" id="level">
+            <option value="1">Easy </option>
+            <option selected value="2">Medium</option>
+            <option value="3">Hard</option>
+        </select>
+    </div>
+    <footer class="sidebar-footer">
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+        <a href="#"><i class="fa fa-instagram"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>
+    </footer>
+   </aside>
+  <!--<footer class="body-footer">
+    <div class="instructions">
+        <div class="instructions-header">
+            <h3>instructions</h3>
+        <button class="close-bodyFooter">
+            <i class="fas fa-times"></i>
+        </button>
+        </div>
+         <ul class="instructions-list">
+        <li>to play game click START GAME button.</li><br>
+        <li>to play new game, click every time RESET GAME button.</li><br>
+        <li>to change level of game, click RESET GAME, open sidebar and choose a level, start the game. </li>
+        </ul>
+    </div>
+   </footer>-->
 </main>
     <script src="app.js"></script>
 </body>
